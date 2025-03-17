@@ -106,3 +106,47 @@ body {
   height: 70px;
   margin-bottom: 10px;
 }
+
+.weather-details-container {
+  gap: 15px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 210px);
+}
+
+.weather-detail-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 40px;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-detail-item > p:first-child {
+  color: #8f8f8f;
+}
+
+.weather-detail-item > div {
+  display: flex;
+  align-items: center;
+}
+
+.weather-detail-item > div > p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2a394f;
+  margin-left: 4px;
+}
+
+.weather-detail-item > div > image {
+  width: 35px;
+  height: 35px;
+}
+
+.weather-detail-item > div > p > span {
+  font-size: 0.75rem;
+  margin-left: -5px;
+}
