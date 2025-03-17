@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  background-color: #e2eaf5;
+}
+
+body {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 40px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.custom-input {
+  border: none;
+  border-radius: 15px;
+  backgorund-color: #fdfffe;
+  color: #232323;
+  padding: 16px;
+  width: 100%;
+}
+
+.custom-input:focus {
+  outline: 2px solid #3aa2ff;
+}
+
+.custom-input::placeholder {
+  color: #b1b8c0;
+}
+
+.showcase-container {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-top: 60px;
+}
+
+.showcase-text > h2:first-child {
+  font-size: 3.125rem;
+  font-weight: 700;
+  color: #2a394f;
+}
+
+.showcase-text > h2:last-child {
+  font-size: 5.125rem;
+  font-weight: 700;
+  color: #2a394f;
+}
+
+.showcase-text > p {
+  font-weight: 500;
+  color: #9aa0a8;
+  margin-bottom: 5px;
+}
+
+.hourly-forecast-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 40px;
+  background: linear-gradient(90.28deg, #007dfe 0.22%, #3aa2ff 99.76%);
+  box-shadow: 0px 30px 50px -19px rgba(1, 126, 254, 0.5);
+}
+
+.hour-weather-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hour-weather-item > p:first-child {
+  color: #fff;
+  opacity: 75%;
+  font-weight: 500;
+}
+
+.hour-weather-item > p:last-child {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.hour-weather-item > img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
