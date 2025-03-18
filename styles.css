@@ -159,7 +159,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-top: 95px;
 }
 
 .day-weather-item {
@@ -182,6 +181,7 @@ div {
 .day-weather-item > div {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .day-weather-item > div > p:first-child {
