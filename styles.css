@@ -19,6 +19,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 40px;
+  grid-column-gap: 100px;
 }
 
 .navbar-container {
@@ -141,7 +142,7 @@ body {
   margin-left: 4px;
 }
 
-.weather-detail-item > div > image {
+.weather-detail-item > div > img {
   width: 35px;
   height: 35px;
 }
@@ -149,4 +150,52 @@ body {
 .weather-detail-item > div > p > span {
   font-size: 0.75rem;
   margin-left: -5px;
+}
+
+.weekly-forecast-container {
+  background: #fff;
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 95px;
+}
+
+.day-weather-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.day-weather-item > p {
+  font-weight: 500;
+  color: #8f8f8f;
+}
+
+.day-weather-item > p,
+img,
+div {
+  flex: 1;
+}
+
+.day-weather-item > div {
+  display: flex;
+  align-items: center;
+}
+
+.day-weather-item > div > p:first-child {
+  color: #2a394f;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.day-weather-item > div > p:last-child {
+  color: #8f8f8f;
+  font-weight: 500;
+}
+
+.day-weather-item > img {
+  width: 60px;
+  height: 60px;
 }
