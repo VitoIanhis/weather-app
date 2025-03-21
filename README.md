@@ -6,14 +6,13 @@ Este é um aplicativo de clima simples que permite pesquisar dados climáticos a
 
 Atualmente, algumas partes do aplicativo já possuem dados dinâmicos, mas estou trabalhando para atualizar o projeto e tornar todas as funcionalidades dinâmicas, proporcionando uma experiência mais interativa e completa. 🌍
 
-Este projeto está hospedado no [Vercel](https://vercel.com) e pode ser acessado através deste [link](https://weather-app-six-beta-66.vercel.app/). 🚀
+Este projeto está hospedado na [Vercel](https://vercel.com) e pode ser acessado através deste [link](https://weather-app-six-beta-66.vercel.app/). 🚀
 
 ## Funcionalidades
 
 - 🌆 Buscar o clima por nome da cidade
 - 🌡️ Exibe temperatura, umidade e velocidade do vento
 - ☁️ Mostra ícones que representam as condições climáticas
-- 🌞 Exibe o índice UV da localização selecionada
 
 ## Como Usar
 
