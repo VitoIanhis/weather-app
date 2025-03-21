@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <meta name="viewport" content="width=device.width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./mobile.css"/>
   </head>
@@ -17,20 +18,23 @@
         <nav class="navbar-container">
           <img src="./images/logo.svg" alt="Clima Hoje"></image>
           <input
-            class="custom-input"
-            type="text"
-            name="city"
-            id="city"
-            placeholder="Procure por cidades"
+          class="custom-input"
+          type="text"
+          name="city"
+          id="city"
+          placeholder="Procure por cidades"
           />
+          <button id="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
         </nav>
         <div class="showcase-container">
           <div class="showcase-text">
-            <h2>São Paulo</h2>
-            <p>Chance de chuva 0%</p>
-            <h2>28°</h2>
+            <h2 id="city-name">São Paulo</h2>
+            <p id="country"></p>
+            <h2 id="temperature">28°</h2>
           </div>
-          <img src="./images/sun clouds.svg" alt="Sol com poucas nuvens" />
+          <img id="weather-icon" class="icon" src="" alt="" />
         </div>
         <div class="hourly-forecast-container">
           <div class="hour-weather-item">
@@ -38,67 +42,67 @@
             <img src="./images/sun cloud.svg" alt="Sol com poucas nuvens" />
             <p>24°</p>
           </div>
-
+          
           <div class="hour-weather-item">
             <p>9:00 AM</p>
             <img src="./images/sun clouds.svg" alt="Sol com muitas nuvens" />
             <p>28°</p>
           </div>
-
+          
           <div class="hour-weather-item">
             <p>12:00 PM</p>
             <img src="./images/sun.svg" alt="Sol" />
             <p>30°</p>
           </div>
-
+          
           <div class="hour-weather-item">
             <p>3:00 PM</p>
             <img src="./images/sun.svg" alt="Sol" />
             <p>30°</p>
           </div>
-
+          
           <div class="hour-weather-item">
             <p>6:00 PM</p>
             <img src="./images/sun cloud.svg" alt="Nublado" />
             <p>27°</p>
           </div>
-
+          
           <div class="hour-weather-item">
             <p>9:00 PM</p>
             <img src="./images/moon clouds.svg" alt="Noite com nuvens" />
             <p>26°</p>
           </div>
         </div>
-        <div class="weather-details-container">
+        <div class="weather-details-container" id="weather-details">
           <div class="weather-detail-item">
             <p>Sensação Térmica</p>
             <div>
               <img src="images/temperature.svg" alt="Sensação Térmica" />
-              <p>30°</p>
+              <p id="temperature-2">30°</p>
             </div>
           </div>
-
+          
           <div class="weather-detail-item">
             <p>Chance de chuva</p>
             <div>
               <img src="images/rain.svg" alt="Chance de chuva" />
-              <p>2%</p>
+              <p id="umidity"></p>
             </div>
           </div>
-
+          
           <div class="weather-detail-item">
             <p>Vento</p>
             <div>
               <img src="images/wind.svg" alt="Vento" />
-              <p>2 <span>km/h</span></p>
+              <p id="wind"> <span class="speed">km/h</span></p>
             </div>
           </div>
-
+          
           <div class="weather-detail-item">
             <p>índice UV</p>
             <div>
               <img src="images/uv.svg" alt="índice UV" />
-              <p>4</p>
+              <p id="uv-index">4</p>
             </div>
           </div>
         </div>
@@ -164,5 +168,7 @@
         </div>
       </div>
     </div>
+    <script src="scripts.js"></script>
   </body>
-</html>
+  </html>
+  

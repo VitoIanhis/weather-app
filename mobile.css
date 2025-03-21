@@ -86,9 +86,9 @@
     height: 35px;
   }
 
-  .weather-detail-item > div > p > span {
-    font-size: 0.5rem;
-    margin-left: -2px;
+  .speed {
+    font-size: 0.75rem;
+    margin-left: -5px;
   }
 
   .weather-detail-item {
@@ -106,5 +106,43 @@
 
   .day-weather-item > p {
     font-size: 0.925rem;
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    background: #fdfffe;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+
+  .custom-input {
+    flex: 1;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+  }
+
+  #search-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 18px;
+    color: #3aa2ff;
+  }
+
+  #search-btn:hover {
+    color: #007dfe;
+  }
+
+  .hide {
+    display: none !important;
+  }
+
+  .icon {
+    image-rendering: auto;
   }
 }
